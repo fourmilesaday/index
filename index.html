@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Miles A Day - Repositories</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #212529;
+            --text-muted: #6c757d;
+            --accent-color: #0366d6;
+            --border-color: #e1e4e8;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .repo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .repo-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.25rem;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .repo-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        .repo-title {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            word-break: break-word;
+        }
+
+        .repo-link-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>fourmilesaday</h1>
+            <p class="subtitle">GitHub Repository Index</p>
+        </header>
+
+        <main>
+            <!-- Category 1 -->
+            <div class="section-title">ILC 15 EXS Series</div>
+            <div class="repo-grid">
+                
+                <a href="https://github.com/fourmilesaday/ILC-15-Exs" target="_blank" rel="noopener noreferrer" class="repo-card">
+                    <div class="repo-title">ILC-15-Exs</div>
+                    <div class="repo-link-text">fourmilesaday/ILC-15-Exs ↗</div>
+                </a>
+
+                <a href="https://github.com/fourmilesaday/ILC-15EXS-Study-1" target="_blank" rel="noopener noreferrer" class="repo-card">
+                    <div class="repo-title">ILC-15EXS-Study-1</div>
+                    <div class="repo-link-text">fourmilesaday/ILC-15EXS-Study-1 ↗</div>
+                </a>
+
+                <a href="https://github.com/fourmilesaday/ILC-15EXS-Study-2" target="_blank" rel="noopener noreferrer" class="repo-card">
+                    <div class="repo-title">ILC-15EXS-Study-2</div>
+                    <div class="repo-link-text">fourmilesaday/ILC-15EXS-Study-2 ↗</div>
+                </a>
+
+            </div>
+
+            <!-- Category 2 -->
+            <div class="section-title">Martial Arts & Forms</div>
+            <div class="repo-grid">
+
+                <a href="https://github.com/fourmilesaday/Sword-Foundamental" target="_blank" rel="noopener noreferrer" class="repo-card">
+                    <div class="repo-title">Sword-Foundamental</div>
+                    <div class="repo-link-text">fourmilesaday/Sword-Foundamental ↗</div>
+                </a>
+
+                <a href="https://github.com/fourmilesaday/Taiji-Sword-54-Form" target="_blank" rel="noopener noreferrer" class="repo-card">
+                    <div class="repo-title">Taiji-Sword-54-Form</div>
+                    <div class="repo-link-text">fourmilesaday/Taiji-Sword-54-Form ↗</div>
+                </a>
+
+                <a href="https://github.com/fourmilesaday/Yang_Fightingset" target="_blank" rel="noopener noreferrer" class="repo-card">
+                    <div class="repo-title">Yang_Fightingset</div>
+                    <div class="repo-link-text">fourmilesaday/Yang_Fightingset ↗</div>
+                </a>
+
+                <a href="https://github.com/fourmilesaday/PD-Master-24" target="_blank" rel="noopener noreferrer" class="repo-card">
+                    <div class="repo-title">PD-Master-24</div>
+                    <div class="repo-link-text">fourmilesaday/PD-Master-24 ↗</div>
+                </a>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
